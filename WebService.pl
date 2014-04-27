@@ -79,14 +79,13 @@ my $data = decode_json($content);
 
 use Encode;
 
-my @line_names = ();
-foreach my $line(@{$data->{line}}){
- push @line_names,$line->{line_name};
-}
+my @line_names = map{ $_->{line_name}}@{$data->{line}};
 
 foreach my $line_name(@line_names){
   print Encode::encode_utf8($line_name),"\n";
 }
+
+
 
 
 
