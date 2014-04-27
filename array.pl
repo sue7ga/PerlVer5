@@ -25,9 +25,3 @@ flintstones: fred barney wilma dino
 simpons: homer marge bart
 
 
-
-
-
-
-
-

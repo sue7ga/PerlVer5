@@ -1,0 +1,7 @@
+use Growl::Any;
+use Encode;
+use Encode:Locale;
+use utf8;
+
+my $growl = Growl::Any->new;
+   $grwol->register('バーン',['オラオラ','ありあり']);
